@@ -1,18 +1,3 @@
-
-
-@media (max-width: 768px) {
-		.block {					
-			flex-direction: column;
-			align-items: center;				
-		}
-		.block {
-		 margin: rem(15px) 0;
-		}
-		.services__block__left {
-			margin-bottom: rem(60px);
-		}
-}
-
 .services-container {
 	padding: rem(30px) rem(30px);
 	width: 100%;
@@ -28,8 +13,25 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
-	width: rem(904px);		
-
+	width: rem(904px);
+	@media (max-width: 768px) {
+		.block {
+			flex-direction: column;
+			align-items: center;
+		}
+		.block {
+			margin: rem(15px) 0;
+		}
+		.services__block__left {
+			margin-bottom: rem(60px);
+		}
+		/*
+		когда у тебя все перед глазами тебе проще и другому человеку кто этим будет заниматься тоже.
+	у этого блока который задает максимальную ширину экрана для всего блока не может быть вот этого flex-wrap: wrap; justify-content: space-between;
+	посмотри в style.scss на класс container и поймешь как должно быть, если не сильно поимаешь о чем я то пиши в телегу
+	или звони в телеге что б я тебе подробней обьяснил
+		 */
+	}
 	@include e(common) {
 		width: rem(422px);	
 		justify-content: center;
@@ -129,8 +131,3 @@
 .services__block__right .block__subtitle {
 			padding: 0px rem(45px) 0px;			
 			}			
-
-
-
-
-	
