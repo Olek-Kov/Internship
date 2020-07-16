@@ -374,7 +374,7 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 768px) {
-  .services-order {
+  .service_order_box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -383,46 +383,25 @@ button::-moz-focus-inner {
         -ms-flex-align: center;
             align-items: center;
   }
-  .services-order {
+  .service_order_box {
     margin: 0.9375rem 0;
   }
-  .services_order__left {
+  .service_order__left {
     margin-bottom: 3.75rem;
   }
-  .services_order__right {
+  .service_order__right {
     margin-left: -3.75rem;
   }
 }
 
-.services-order-container {
-  padding: 1.875rem 1.875rem;
-  width: 100%;
-  min-height: 100%;
-  height: 100%;
-  overflow: hidden;
+.service-order_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 2.5rem;
 }
 
-.services-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 1px;
-  padding-left: 1px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 56.5rem;
-}
-
-.services-order__common {
+.service-order_box__common {
   width: 26.375rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -443,13 +422,13 @@ button::-moz-focus-inner {
   padding: 2.1875rem 2.1875rem;
 }
 
-.services-order__common:hover {
+.service-order_box__common:hover {
   background: #192A67;
   -webkit-box-shadow: 0.1875rem 0.25rem 0.75rem rgba(99, 99, 99, 0.25);
           box-shadow: 0.1875rem 0.25rem 0.75rem rgba(99, 99, 99, 0.25);
 }
 
-.services-order__title {
+.service-order_box__title {
   font: 1.5rem "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.75rem;
@@ -459,7 +438,7 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__subtitle {
+.service-order_box__subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   line-height: 1.3125rem;
@@ -471,7 +450,7 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__description {
+.service-order_box__description {
   font-family: "Roboto", sans-serif;
   font-size: 0.8125rem;
   line-height: 0.9375rem;
@@ -483,7 +462,7 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__btn {
+.service-order_box__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +480,7 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__btn-info {
+.service-order_box__btn-info {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.0625rem;
@@ -512,7 +491,7 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__title-sign {
+.service-order_box__title-sign {
   padding: 0.4375rem 0rem 0.9375rem 0rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -527,29 +506,29 @@ button::-moz-focus-inner {
   transition: all 0.3s ease 0.1s;
 }
 
-.services-order__common:hover .services-order__title,
-.services-order__common:hover .services-order__subtitle,
-.services-order__common:hover .services-order__description {
+.service-order_box__common:hover .service-order_box__title,
+.service-order_box__common:hover .service-order_box__subtitle,
+.service-order_box__common:hover .service-order_box__description {
   color: #FFFFFF;
 }
 
-.services-order__common:hover .services-order__btn {
+.service-order_box__common:hover .service-order_box__btn {
   background-color: #B0CCEC;
 }
 
-.services-order__common:hover .services-order__btn-info {
+.service-order_box__common:hover .service-order_box__btn-info {
   color: #192A67;
 }
 
-.services_order__left .services-order__subtitle {
+.service_order__left .service-order_box__subtitle {
   padding: 2.5625rem 4.375rem 0px;
 }
 
-.services_order__right .services-order__subtitle {
+.service_order__right .service-order_box__subtitle {
   padding: 0px 2.8125rem 0px;
 }
 
-.services-order .services_order__left {
+.service-order_box .service_order__left {
   margin-right: 3.75rem;
 }
 
@@ -590,7 +569,7 @@ input {
 }
 
 .container {
-  width: 76.875rem;
+  width: 57.625rem;
   padding-right: 1px;
   padding-left: 1px;
   margin-right: auto;
@@ -607,7 +586,7 @@ input {
 
 @media (min-width: 1101px) {
   .container {
-    max-width: 76.875rem;
+    max-width: 57.625rem;
   }
 }
 

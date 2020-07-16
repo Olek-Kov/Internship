@@ -1,38 +1,25 @@
 
 
 @media (max-width: 768px) {
-		.services-order {					
+		.service_order_box {					
 			flex-direction: column;
 			align-items: center;				
 		}
-		.services-order {
+		.service_order_box {
 		 margin: rem(15px) 0;
 		}
-		.services_order__left {
+		.service_order__left {
 			margin-bottom: rem(60px);
 		}
-		.services_order__right {
+		.service_order__right {
 			margin-left: rem(-60px);
 	}
 }
 
-.services-order-container {
-	padding: rem(30px) rem(30px);
-	width: 100%;
-	min-height: 100%;
-	height: 100%;
-	overflow: hidden;
+
+.service-order_box {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.services-order {
-	display: flex;
-	padding-right: 1px;
-	padding-left: 1px;
-	margin-right: auto;
-	margin-left: auto;
-	width: rem(904px);		
+	margin-top: rem(40px);
 
 	@include e(common) {		
 		width: rem(422px);	
@@ -50,7 +37,6 @@
 		}
 		
 	}
-
 	
 	@include e(title) {		
 		font: rem(24px) $fontFamily;	
@@ -115,28 +101,28 @@
 	}
 }
 
-.services-order__common:hover .services-order__title,
-.services-order__common:hover .services-order__subtitle,
-.services-order__common:hover .services-order__description {
+.service-order_box__common:hover .service-order_box__title,
+.service-order_box__common:hover .service-order_box__subtitle,
+.service-order_box__common:hover .service-order_box__description {
 				color: $white;								
 			}			
 
-.services-order__common:hover .services-order__btn {
+.service-order_box__common:hover .service-order_box__btn {
 				background-color: #B0CCEC;					
 			}
-.services-order__common:hover .services-order__btn-info {
+.service-order_box__common:hover .service-order_box__btn-info {
 				color: $blue;					
 			}
 
-.services_order__left .services-order__subtitle {
+.service_order__left .service-order_box__subtitle {
 			padding: rem(41px) rem(70px) 0px;			
 			}
 
-.services_order__right .services-order__subtitle {
+.service_order__right .service-order_box__subtitle {
 			padding: 0px rem(45px) 0px;			
 			}			
 
-.services-order .services_order__left {
+.service-order_box .service_order__left {
 		margin-right: rem(60px);
 	}
 
