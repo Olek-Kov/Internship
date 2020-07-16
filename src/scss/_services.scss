@@ -1,19 +1,22 @@
 
 
 @media (max-width: 768px) {
-		.block {					
+		.services-order {					
 			flex-direction: column;
 			align-items: center;				
 		}
-		.block {
+		.services-order {
 		 margin: rem(15px) 0;
 		}
-		.services__block__left {
+		.services_order__left {
 			margin-bottom: rem(60px);
 		}
+		.services_order__right {
+			margin-left: rem(-60px);
+	}
 }
 
-.services-container {
+.services-order-container {
 	padding: rem(30px) rem(30px);
 	width: 100%;
 	min-height: 100%;
@@ -23,14 +26,15 @@
 	justify-content: center;
 	align-items: center;
 }
-.block {
+.services-order {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0;
+	padding-right: 1px;
+	padding-left: 1px;
+	margin-right: auto;
+	margin-left: auto;
 	width: rem(904px);		
 
-	@include e(common) {
+	@include e(common) {		
 		width: rem(422px);	
 		justify-content: center;
 		text-align: center;
@@ -46,6 +50,8 @@
 		}
 		
 	}
+
+	
 	@include e(title) {		
 		font: rem(24px) $fontFamily;	
 		font-weight: 700;		
@@ -109,28 +115,30 @@
 	}
 }
 
-.block__common:hover .block__title,
-.block__common:hover .block__subtitle,
-.block__common:hover .block__description {
+.services-order__common:hover .services-order__title,
+.services-order__common:hover .services-order__subtitle,
+.services-order__common:hover .services-order__description {
 				color: $white;								
 			}			
 
-.block__common:hover .block__btn {
+.services-order__common:hover .services-order__btn {
 				background-color: #B0CCEC;					
 			}
-.block__common:hover .block__btn-info {
+.services-order__common:hover .services-order__btn-info {
 				color: $blue;					
 			}
 
-.services__block__left .block__subtitle {
+.services_order__left .services-order__subtitle {
 			padding: rem(41px) rem(70px) 0px;			
 			}
 
-.services__block__right .block__subtitle {
+.services_order__right .services-order__subtitle {
 			padding: 0px rem(45px) 0px;			
 			}			
 
-
+.services-order .services_order__left {
+		margin-right: rem(60px);
+	}
 
 
 	
