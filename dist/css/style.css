@@ -373,8 +373,15 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+.service-order_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem;
+}
+
 @media (max-width: 768px) {
-  .service_order_box {
+  .service-order_box .service_order_box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -383,22 +390,15 @@ button::-moz-focus-inner {
         -ms-flex-align: center;
             align-items: center;
   }
-  .service_order_box {
+  .service-order_box .service_order_box {
     margin: 0.9375rem 0;
   }
-  .service_order__left {
+  .service-order_box .service_order__left {
     margin-bottom: 3.75rem;
   }
-  .service_order__right {
+  .service-order_box .service_order__right {
     margin-left: -3.75rem;
   }
-}
-
-.service-order_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2.5rem;
 }
 
 .service-order_box__common {

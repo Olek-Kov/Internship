@@ -1,6 +1,9 @@
 
-
-@media (max-width: 768px) {
+.service-order_box {
+	display: flex;
+	margin-top: rem(40px);
+	
+	@media (max-width: 768px) {
 		.service_order_box {					
 			flex-direction: column;
 			align-items: center;				
@@ -15,11 +18,6 @@
 			margin-left: rem(-60px);
 	}
 }
-
-
-.service-order_box {
-	display: flex;
-	margin-top: rem(40px);
 
 	@include e(common) {		
 		width: rem(422px);	
