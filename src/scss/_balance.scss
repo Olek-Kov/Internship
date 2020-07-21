@@ -1,0 +1,218 @@
+.balance {}
+.balance_box {}
+.balance_box__header {
+	margin-top: rem(30px);
+	display: flex;
+	justify-content: space-between;	
+}
+.balance_box__header_info {
+	display: inline-block;	
+	font: rem(24px) $fontFamily;
+	line-height: rem(28px);
+	color: #192A67;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.balance_box__header_filter_btn {
+	display: block;
+	font: rem(17px) $fontFamily;
+	line-height: rem(20px);
+	color: #000037;
+	padding: rem(9px) rem(25px);
+	border: rem(1px) solid #E0E0E0;
+	border-radius: rem(8px);
+	text-align: center;
+	cursor: pointer;
+	 span {
+		display: inline-block;
+		padding-right: rem(10px);	
+		}
+		&.active {
+			background: #6785B8;
+			color: $white;
+		}
+}
+
+
+.balance_box__header_filters {
+	display: none;
+}
+.balance_box__tab {	
+	margin-top: rem(30px);
+}
+.balance_box__tab_link {
+	width: 100%;
+	text-align: center;
+}
+.balance_box__container {}
+.balance_box__container_content {}
+.balance_box__cons_data {
+	table-layout: auto;
+	 display: inline;
+	 width: 100%;		
+}
+
+caption {
+	font: rem(16px) $fontFamily;
+	line-height: rem(19px);
+	text-align: left;
+	margin-top: rem(32px);
+	background-color: #6785B8;
+	color: $white;
+	padding: rem(8px) rem(0px) rem(8px) rem(13px);
+}
+
+thead {
+	font: rem(14px) $fontFamily;
+	line-height: rem(14px);
+	color: $dark;
+	border:2px solid #192A67; 	
+	border-style: hidden hidden solid;
+}
+
+
+th {
+	height: rem(59px);
+	padding-top:rem(15px);	
+}
+
+td {
+	padding:rem(18px) rem(0px);
+}
+
+tbody {
+	color: $dark;
+	font: rem(14px) $fontFamily;
+	border:rem(1px) solid #B6B6B6; 	
+	border-style: solid hidden solid;
+	font-weight: 300;
+}
+
+.balance_number {
+	width: rem(40px);
+	text-align: center;
+}
+.balance_contract {
+	width: rem(208px);	
+}
+.balance_contractor {
+	width: rem(190px);	
+}
+.balance_currency_pay {
+	width: rem(147px);
+	text-align: right;
+}
+
+.balance_accrual {
+	text-align: right;
+	width: rem(98px);
+}
+
+.balance_summary {
+	width: rem(82px);	
+	text-align: right;
+}
+.td_price_up {
+	color: $green;
+}
+.td_price_down {
+	color: $red;
+}
+
+.history_description {	
+	width: rem(220px);
+	span {
+		color: $dark;
+		font-weight: 500;
+	}	
+}
+
+.balance_box__history_data tbody td {
+		font-size: rem(12px);
+		padding: rem(8px) rem(0px);
+	}
+
+
+.balance_box__history_data {
+	table-layout: auto;
+	 border-collapse: collapse;
+	 width: 100%;	 
+	 		thead, tbody {
+			color: $dark;
+		}
+		td {
+			vertical-align: middle;
+		}
+}
+.history_period {
+	width: rem(123px);
+}
+.history_date {
+	width: rem(109px);
+	text-align: center;
+}
+.history_pay {
+	text-align: right;
+	width: rem(98px);
+}
+.history_contract {
+	text-align: center;
+}
+
+.show_positions_btn {
+	width: rem(204px);
+	padding-top: rem(7px);
+	display: inline-block;
+	cursor: pointer;
+	span {
+		font: rem(14px) $fontFamily;
+		font-weight: 700;
+		line-height: rem(16px);
+		color: #6785B8;		
+	}
+	img {
+		display: -inline-block;
+		margin-left: rem(46px);
+		fill:#6785B8;
+	}
+		.rotate-reset {
+	    transform: rotate(0deg);
+	    }
+	}	
+
+.rotate {
+	transform: rotate(-180deg);
+}
+
+.show_positions_filter {
+	display: none;
+}
+
+.balance_box__tab ul li {
+		float: left;
+		display: inline-block;
+		width: 50%;
+}
+.balance_box__tab ul li a{
+		font: rem(18px) $fontFamily;
+		display: inline-block;
+		color: #B6B6B6;
+		padding: rem(13px) rem(0px);
+		font-weight: 700;	
+		border: rem(1px) solid #192A67;
+		border-style: hidden hidden solid;	
+}
+
+.balance_box__tab ul li.active a {
+		color:$dark;
+		border: rem(5px) solid #192A67;
+		border-style: hidden hidden solid;	
+}
+
+
+.balance_box__container_content {
+		display: none;
+}
+.balance_box__container_content:first-child {
+		display: block;
+}

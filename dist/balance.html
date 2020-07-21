@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="balance">
+	<div class="container">
+		<div class="balance_box">
+			<div class="balance_box__header">
+				<h1 class="balance_box__header_info">Баланс и история транзакций</h1>
+				
+					<button class="balance_box__header_filter_btn" onclick=""> 
+						<span>Фильтры</span>	 
+						<img src="i/Vector.svg" alt="">
+					</button>				
+			</div>
+
+			<div class="balance_box__header_filters"> 	
+				<button class="balance_box__header_filters_contracts" onclick=""><span>Все договора</span></button>
+					<button class="balance_box__header_filter_period" onclick=""><span>Весь период</span></button>
+						
+			</div>
+
+			<div class="balance_box__tab">
+					<ul>
+						<li class="active"><a class="balance_box__tab_link" href="#">Сводный баланс</a></li>
+						<li><a class="balance_box__tab_link" href="#">История транзакций</a></li>
+					</ul>
+			</div>
+
+			<div class="balance_box__container">
+			<div class="balance_box__container_content active">
+				<table class="balance_box__cons_data">
+					<caption>Сводный баланс по клиенту за весь период</caption>
+						<thead>
+							<tr>
+							<th class="balance_number">№</th>
+							<th class="balance_contract">Договор</th>
+							<th class="balance_contractor">Поставщик</th>
+							<th class="balance_currency_pay">Оплаты в валюте (UAH)</th>
+							<th class="balance_currency_pay">Временная оплата (UAH)</th>
+							<th class="balance_accrual">Начисления (UAH)</th>
+							<th class="balance_summary">Баланс</th>				
+							</tr>
+						</thead>	
+						<tbody>	
+						<tr>
+							<td class="balance_number">1</td>
+							<td>ВК-23242 от 23.04.2020</td>
+							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
+							<td class="balance_currency_pay td_price_up">+343434.00</td>
+							<td class="balance_currency_pay">-</td>
+							<td class="balance_accrual td_price_down">-343434.00</td>
+							<td class="balance_summary td_price_up">0.00</td>					
+						</tr>	
+						</tbody>		
+						<tbody>	
+						<tr>
+							<td class="balance_number">2</td>
+							<td>IMPLS/123-12 от 23.04.2020</td>
+							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
+							<td class="balance_currency_pay td_price_up">+600.00</td>
+							<td class="balance_currency_pay">-</td>
+							<td class="balance_accrual td_price_down">-1234.00</td>
+							<td class="balance_summary td_price_down">-634.00</td>				
+						</tr>	
+						</tbody>	
+						<tbody>	
+						<tr>
+							<td class="balance_number">3</td>
+							<td>ВК-23242 от 23.04.2020</td>
+							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
+							<td class="balance_currency_pay td_price_up">+1000.00</td>
+							<td class="balance_currency_pay">-</td>
+							<td class="balance_accrual td_price_down">-500.00</td>
+							<td class="balance_summary td_price_up">500.00</td>					
+						</tr>	
+						</tbody>		
+						<tbody>	
+						<tr>
+							<td class="balance_number">4</td>
+							<td class="balance_column_contr">ВК-1212323232 от 25.01.1999</td>
+							<td class="balance_column_contr">ТОВ “Дабл Ю нет Юкрейн”</td>
+							<td class="balance_currency_pay td_price_up">0.00</td>
+							<td class="balance_currency_pay">-</td>
+							<td class="balance_accrual td_price_down">-2000.00</td>
+							<td class="balance_summary td_price_down">-2000.00</td>				
+						</tr>	
+						</tbody>				
+				</table>				
+			</div>
+			<div class="balance_box__container_content">
+				<table class="balance_box__history_data">
+						<caption>История транзакций</caption>
+						<thead>
+							<tr>
+								<th class="balance_number">№</th>
+								<th class="history_period">Период</th>
+								<th class="history_date">Дата</th>
+								<th class="balance_accrual">Оплата <br>(UAH)</th>
+								<th class="balance_accrual">Начисления (UAH)</th>
+								<th class="balance_accrual">Баланс <br>(UAH)</th>
+								<th class="history_contract">Договор</th>
+								<th class="history_description">Описание</th>			
+							</tr>	
+						</thead>
+						<tbody>		
+							<tr>
+								<td class="balance_number">1</td>
+								<td>Апрель</td>
+								<td class="history_date">02/04/2020</td>
+								<td class="balance_accrual td_price_up">+ 3600.00</td>
+								<td class="balance_accrual">-</td>
+								<td class="balance_accrual td_price_up">0</td>
+								<td class="history_contract">7777</td>
+								<td class="history_description">Опл.рах.№ WU-0180750 вiд 01/02/2020 за пiдтримку мережевої IТ-iнфраструктури ПДВ 20% 8856.00 ((0101567561))</td>
+							</tr>	
+						</tbody>	
+						<tbody>		
+							<tr>
+								<td class="balance_number">2</td>
+								<td>Апрель</td>
+								<td class="history_date">01/04/2020</td>
+								<td class="balance_accrual">−</td>
+								<td class="balance_accrual td_price_down">-3600</td>
+								<td class="balance_accrual td_price_down">-3600</td>
+								<td class="history_contract">7777</td>
+								<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span> 
+									<button class="show_positions_btn" onclick="">
+										<span>Посмотреть позиции
+										</span>
+										<img src="i/Vector.svg" class="rotate-reset" alt="">
+									</button>
+									<div class="show_positions_filter">
+										asfasgagsag
+									</div>
+								</td>
+							</tr>	
+						</tbody>	<tbody>		
+							<tr>
+								<td class="balance_number">2.1</td>
+								<td>Апрель 2020</td>
+								<td class="history_date">01/04/2020</td>
+								<td class="balance_accrual">-</td>
+								<td class="balance_accrual td_price_down">-932.00</td>
+								<td class="balance_accrual td_price_down">-164137.96</td>
+								<td class="history_contract">7777</td>
+								<td class="history_description">Абонентна плата за використання послуги "Підтрика мережевої IT-інфраструктури юніт 0908" за Квітень 2020
+								</td>
+							</tr>	
+						</tbody>	
+					</table>	
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jq.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

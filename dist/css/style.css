@@ -532,6 +532,247 @@ button::-moz-focus-inner {
   margin-right: 3.75rem;
 }
 
+.balance_box__header {
+  margin-top: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.balance_box__header_info {
+  display: inline-block;
+  font: 1.5rem "Roboto", sans-serif;
+  line-height: 1.75rem;
+  color: #192A67;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.balance_box__header_filter_btn {
+  display: block;
+  font: 1.0625rem "Roboto", sans-serif;
+  line-height: 1.25rem;
+  color: #000037;
+  padding: 0.5625rem 1.5625rem;
+  border: 0.0625rem solid #E0E0E0;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.balance_box__header_filter_btn span {
+  display: inline-block;
+  padding-right: 0.625rem;
+}
+
+.balance_box__header_filter_btn.active {
+  background: #6785B8;
+  color: #FFFFFF;
+}
+
+.balance_box__header_filters {
+  display: none;
+}
+
+.balance_box__tab {
+  margin-top: 1.875rem;
+}
+
+.balance_box__tab_link {
+  width: 100%;
+  text-align: center;
+}
+
+.balance_box__cons_data {
+  table-layout: auto;
+  display: inline;
+  width: 100%;
+}
+
+caption {
+  font: 1rem "Roboto", sans-serif;
+  line-height: 1.1875rem;
+  text-align: left;
+  margin-top: 2rem;
+  background-color: #6785B8;
+  color: #FFFFFF;
+  padding: 0.5rem 0rem 0.5rem 0.8125rem;
+}
+
+thead {
+  font: 0.875rem "Roboto", sans-serif;
+  line-height: 0.875rem;
+  color: #3C3C3B;
+  border: 2px solid #192A67;
+  border-style: hidden hidden solid;
+}
+
+th {
+  height: 3.6875rem;
+  padding-top: 0.9375rem;
+}
+
+td {
+  padding: 1.125rem 0rem;
+}
+
+tbody {
+  color: #3C3C3B;
+  font: 0.875rem "Roboto", sans-serif;
+  border: 0.0625rem solid #B6B6B6;
+  border-style: solid hidden solid;
+  font-weight: 300;
+}
+
+.balance_number {
+  width: 2.5rem;
+  text-align: center;
+}
+
+.balance_contract {
+  width: 13rem;
+}
+
+.balance_contractor {
+  width: 11.875rem;
+}
+
+.balance_currency_pay {
+  width: 9.1875rem;
+  text-align: right;
+}
+
+.balance_accrual {
+  text-align: right;
+  width: 6.125rem;
+}
+
+.balance_summary {
+  width: 5.125rem;
+  text-align: right;
+}
+
+.td_price_up {
+  color: #30AF15;
+}
+
+.td_price_down {
+  color: #AA231F;
+}
+
+.history_description {
+  width: 13.75rem;
+}
+
+.history_description span {
+  color: #3C3C3B;
+  font-weight: 500;
+}
+
+.balance_box__history_data tbody td {
+  font-size: 0.75rem;
+  padding: 0.5rem 0rem;
+}
+
+.balance_box__history_data {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.balance_box__history_data thead, .balance_box__history_data tbody {
+  color: #3C3C3B;
+}
+
+.balance_box__history_data td {
+  vertical-align: middle;
+}
+
+.history_period {
+  width: 7.6875rem;
+}
+
+.history_date {
+  width: 6.8125rem;
+  text-align: center;
+}
+
+.history_pay {
+  text-align: right;
+  width: 6.125rem;
+}
+
+.history_contract {
+  text-align: center;
+}
+
+.show_positions_btn {
+  width: 12.75rem;
+  padding-top: 0.4375rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.show_positions_btn span {
+  font: 0.875rem "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #6785B8;
+}
+
+.show_positions_btn img {
+  display: -inline-block;
+  margin-left: 2.875rem;
+  fill: #6785B8;
+}
+
+.show_positions_btn .rotate-reset {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.rotate {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.show_positions_filter {
+  display: none;
+}
+
+.balance_box__tab ul li {
+  float: left;
+  display: inline-block;
+  width: 50%;
+}
+
+.balance_box__tab ul li a {
+  font: 1.125rem "Roboto", sans-serif;
+  display: inline-block;
+  color: #B6B6B6;
+  padding: 0.8125rem 0rem;
+  font-weight: 700;
+  border: 0.0625rem solid #192A67;
+  border-style: hidden hidden solid;
+}
+
+.balance_box__tab ul li.active a {
+  color: #3C3C3B;
+  border: 0.3125rem solid #192A67;
+  border-style: hidden hidden solid;
+}
+
+.balance_box__container_content {
+  display: none;
+}
+
+.balance_box__container_content:first-child {
+  display: block;
+}
+
 html {
   font-size: "Roboto", sans-serif;
 }
