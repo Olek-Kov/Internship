@@ -628,6 +628,21 @@ button::-moz-focus-inner {
   text-align: center;
 }
 
+.balance_box__tab ul li {
+  float: left;
+  display: inline-block;
+  width: 50%;
+}
+
+.balance_box__tab ul li a {
+  font: 1.125rem "Roboto", sans-serif;
+  display: inline-block;
+  color: #B6B6B6;
+  padding: 0.8125rem 0rem;
+  font-weight: 700;
+  border-bottom: 0.0625rem solid #192A67;
+}
+
 .balance_box__container .balance_box__container_content {
   display: none;
 }
@@ -640,6 +655,68 @@ button::-moz-focus-inner {
   table-layout: auto;
   display: inline;
   width: 100%;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__cons_data td {
+  padding: 1.125rem 0rem;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data thead, .balance_box__container .balance_box__container_content .balance_box__history_data tbody {
+  color: #3C3C3B;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data td {
+  vertical-align: middle;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description {
+  width: 13.75rem;
+  font-size: 0.75rem;
+  padding: 0.625rem 0rem;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description span {
+  color: #3C3C3B;
+  font-weight: 500;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn {
+  width: 12.75rem;
+  padding-top: 0.4375rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn span {
+  font: 0.875rem "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #6785B8;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn img {
+  display: -inline-block;
+  margin-left: 2.875rem;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn .rotate-reset {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.balance_box__container .balance_box__container_content .history_collapse {
+  display: none;
+  background: #E3EDFA;
+}
+
+.balance_box__container .balance_box__container_content .history_collapse.in {
+  display: table-row;
 }
 
 .balance_box__container .balance_box__container_content caption {
@@ -672,122 +749,60 @@ button::-moz-focus-inner {
 
 .balance_box__container tbody td {
   border-bottom: 0.0625rem solid #B6B6B6;
-  padding: 1.125rem 0rem;
 }
 
-.balance_number {
+.balance_box__container .balance_number {
   width: 2.5rem;
   text-align: center;
 }
 
-.balance_contract {
+.balance_box__container .balance_contract {
   width: 13rem;
 }
 
-.balance_contractor {
+.balance_box__container .balance_contractor {
   width: 11.875rem;
 }
 
-.balance_currency_pay {
+.balance_box__container .balance_currency_pay {
   width: 9.1875rem;
   text-align: right;
 }
 
-.balance_accrual {
+.balance_box__container .balance_accrual {
   text-align: right;
   width: 6.125rem;
 }
 
-.balance_summary {
+.balance_box__container .balance_summary {
   width: 5.125rem;
   text-align: right;
 }
 
-.balance_plus {
+.balance_box__container .balance_plus {
   color: #30AF15;
 }
 
-.balance_minus {
+.balance_box__container .balance_minus {
   color: #AA231F;
 }
 
-.history_description {
-  width: 13.75rem;
-}
-
-.history_description span {
-  color: #3C3C3B;
-  font-weight: 500;
-}
-
-.balance_box__history_data tbody td {
-  font-size: 0.75rem;
-  padding: 0.5rem 0rem;
-}
-
-.balance_box__history_data {
-  table-layout: auto;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.balance_box__history_data thead, .balance_box__history_data tbody {
-  color: #3C3C3B;
-}
-
-.balance_box__history_data td {
-  vertical-align: middle;
-}
-
-.history_collapse {
-  display: none;
-  background: #E3EDFA;
-}
-
-.history_collapse.in {
-  display: table-row;
-}
-
-.history_period {
+.balance_box__container .history_period {
   width: 7.6875rem;
 }
 
-.history_date {
+.balance_box__container .history_date {
   width: 6.8125rem;
   text-align: center;
 }
 
-.history_pay {
+.balance_box__container .history_pay {
   text-align: right;
   width: 6.125rem;
 }
 
-.history_contract {
+.balance_box__container .history_contract {
   text-align: center;
-}
-
-.show_positions_btn {
-  width: 12.75rem;
-  padding-top: 0.4375rem;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.show_positions_btn span {
-  font: 0.875rem "Roboto", sans-serif;
-  font-weight: 700;
-  line-height: 1rem;
-  color: #6785B8;
-}
-
-.show_positions_btn img {
-  display: -inline-block;
-  margin-left: 2.875rem;
-}
-
-.show_positions_btn .rotate-reset {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
 }
 
 .rotate {
@@ -797,21 +812,6 @@ button::-moz-focus-inner {
 
 .show_positions_filter {
   display: none;
-}
-
-.balance_box__tab ul li {
-  float: left;
-  display: inline-block;
-  width: 50%;
-}
-
-.balance_box__tab ul li a {
-  font: 1.125rem "Roboto", sans-serif;
-  display: inline-block;
-  color: #B6B6B6;
-  padding: 0.8125rem 0rem;
-  font-weight: 700;
-  border-bottom: 0.0625rem solid #192A67;
 }
 
 .balance_box__tab ul li.active a {
