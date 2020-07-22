@@ -10,7 +10,8 @@ $(document).ready(function(){
 
 	$(".show_positions_btn").click(function(e) {
 		e.preventDefault();
-		$(".show_positions_filter").toggle();
+		let dataNumber = $(this).attr("data-number");
+		$('.history_collapse[data-number="' + dataNumber + '"]').toggleClass('in');
 		$(this).toggleClass("active");
 	});
 

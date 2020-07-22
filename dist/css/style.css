@@ -542,7 +542,7 @@ button::-moz-focus-inner {
           justify-content: space-between;
 }
 
-.balance_box__header_info {
+.balance_box__header .balance_box__header_info {
   display: inline-block;
   font: 1.5rem "Roboto", sans-serif;
   line-height: 1.75rem;
@@ -551,8 +551,9 @@ button::-moz-focus-inner {
   font-weight: 700;
 }
 
-.balance_box__header_filter_btn {
+.balance_box__header .balance_box__header_filter_btn {
   display: block;
+  width: 9.375rem;
   font: 1.0625rem "Roboto", sans-serif;
   line-height: 1.25rem;
   color: #000037;
@@ -563,36 +564,85 @@ button::-moz-focus-inner {
   cursor: pointer;
 }
 
-.balance_box__header_filter_btn span {
+.balance_box__header .balance_box__header_filter_btn_vector_dark_blue {
   display: inline-block;
-  padding-right: 0.625rem;
 }
 
-.balance_box__header_filter_btn.active {
+.balance_box__header .balance_box__header_filter_btn_vector_white {
+  display: none;
+}
+
+.balance_box__header .balance_box__header_filter_btn span {
+  display: inline-block;
+  margin-right: 0.4375rem;
+}
+
+.balance_box__header .balance_box__header_filter_btn.active {
   background: #6785B8;
   color: #FFFFFF;
 }
 
+.balance_box__header .balance_box__header_filter_btn.active .balance_box__header_filter_btn_vector_dark_blue {
+  display: none;
+}
+
+.balance_box__header .balance_box__header_filter_btn.active .balance_box__header_filter_btn_vector_white {
+  display: inline-block;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .balance_box__header_filters {
   display: none;
+  margin-top: 1.625rem;
+}
+
+.balance_box__header_filters select {
+  font: 0.875rem "Roboto", sans-serif;
+  color: #3C3C3B;
+  line-height: 1rem;
+  padding: 0.4375rem;
+  border: 1px solid #E0E0E0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../i/vector_dark.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right .8em top 50%, 0 0;
+}
+
+.balance_box__header_filters_contracts {
+  width: 256px;
+}
+
+.balance_box__header_filters_period {
+  width: 215px;
 }
 
 .balance_box__tab {
   margin-top: 1.875rem;
 }
 
-.balance_box__tab_link {
+.balance_box__tab .balance_box__tab_link {
   width: 100%;
   text-align: center;
 }
 
-.balance_box__cons_data {
+.balance_box__container .balance_box__container_content {
+  display: none;
+}
+
+.balance_box__container .balance_box__container_content:first-child {
+  display: block;
+}
+
+.balance_box__container .balance_box__container_content .balance_box__cons_data {
   table-layout: auto;
   display: inline;
   width: 100%;
 }
 
-caption {
+.balance_box__container .balance_box__container_content caption {
   font: 1rem "Roboto", sans-serif;
   line-height: 1.1875rem;
   text-align: left;
@@ -602,29 +652,27 @@ caption {
   padding: 0.5rem 0rem 0.5rem 0.8125rem;
 }
 
-thead {
+.balance_box__container .balance_box__container_content thead {
   font: 0.875rem "Roboto", sans-serif;
   line-height: 0.875rem;
   color: #3C3C3B;
-  border: 2px solid #192A67;
-  border-style: hidden hidden solid;
+  border-bottom: 2px solid #192A67;
 }
 
-th {
+.balance_box__container .balance_box__container_content thead th {
   height: 3.6875rem;
   padding-top: 0.9375rem;
 }
 
-td {
-  padding: 1.125rem 0rem;
-}
-
-tbody {
+.balance_box__container tbody {
   color: #3C3C3B;
   font: 0.875rem "Roboto", sans-serif;
-  border: 0.0625rem solid #B6B6B6;
-  border-style: solid hidden solid;
   font-weight: 300;
+}
+
+.balance_box__container tbody td {
+  border-bottom: 0.0625rem solid #B6B6B6;
+  padding: 1.125rem 0rem;
 }
 
 .balance_number {
@@ -655,11 +703,11 @@ tbody {
   text-align: right;
 }
 
-.td_price_up {
+.balance_plus {
   color: #30AF15;
 }
 
-.td_price_down {
+.balance_minus {
   color: #AA231F;
 }
 
@@ -689,6 +737,15 @@ tbody {
 
 .balance_box__history_data td {
   vertical-align: middle;
+}
+
+.history_collapse {
+  display: none;
+  background: #E3EDFA;
+}
+
+.history_collapse.in {
+  display: table-row;
 }
 
 .history_period {
@@ -726,7 +783,6 @@ tbody {
 .show_positions_btn img {
   display: -inline-block;
   margin-left: 2.875rem;
-  fill: #6785B8;
 }
 
 .show_positions_btn .rotate-reset {
@@ -755,22 +811,12 @@ tbody {
   color: #B6B6B6;
   padding: 0.8125rem 0rem;
   font-weight: 700;
-  border: 0.0625rem solid #192A67;
-  border-style: hidden hidden solid;
+  border-bottom: 0.0625rem solid #192A67;
 }
 
 .balance_box__tab ul li.active a {
   color: #3C3C3B;
-  border: 0.3125rem solid #192A67;
-  border-style: hidden hidden solid;
-}
-
-.balance_box__container_content {
-  display: none;
-}
-
-.balance_box__container_content:first-child {
-  display: block;
+  border-bottom: 0.3125rem solid #192A67;
 }
 
 html {

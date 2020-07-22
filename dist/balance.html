@@ -18,13 +18,17 @@
 				
 					<button class="balance_box__header_filter_btn" onclick=""> 
 						<span>Фильтры</span>	 
-						<img src="i/Vector.svg" alt="">
+						<img class="balance_box__header_filter_btn_vector_dark_blue" src="i/Vector_dark_blue.svg">
+						<img class="balance_box__header_filter_btn_vector_white" src="i/Vector_white.svg">
 					</button>				
 			</div>
 
-			<div class="balance_box__header_filters"> 	
-				<button class="balance_box__header_filters_contracts" onclick=""><span>Все договора</span></button>
-					<button class="balance_box__header_filter_period" onclick=""><span>Весь период</span></button>
+			<div class="balance_box__header_filters"> 	<select class="balance_box__header_filters_contracts" name="contracts">
+				<option value="" selected>Все договора</option>
+			</select>
+			<select class="balance_box__header_filters_period" name="period">
+				<option value="" selected>Весь период</option>
+			</select>
 						
 			</div>
 
@@ -55,43 +59,40 @@
 							<td class="balance_number">1</td>
 							<td>ВК-23242 от 23.04.2020</td>
 							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
-							<td class="balance_currency_pay td_price_up">+343434.00</td>
+							<td class="balance_currency_pay balance_plus">+343434.00</td>
 							<td class="balance_currency_pay">-</td>
-							<td class="balance_accrual td_price_down">-343434.00</td>
-							<td class="balance_summary td_price_up">0.00</td>					
+							<td class="balance_accrual balance_minus">-343434.00</td>
+							<td class="balance_summary balance_plus">0.00</td>					
 						</tr>	
-						</tbody>		
-						<tbody>	
+						
 						<tr>
 							<td class="balance_number">2</td>
 							<td>IMPLS/123-12 от 23.04.2020</td>
 							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
-							<td class="balance_currency_pay td_price_up">+600.00</td>
+							<td class="balance_currency_pay balance_plus">+600.00</td>
 							<td class="balance_currency_pay">-</td>
-							<td class="balance_accrual td_price_down">-1234.00</td>
-							<td class="balance_summary td_price_down">-634.00</td>				
+							<td class="balance_accrual balance_minus">-1234.00</td>
+							<td class="balance_summary balance_minus">-634.00</td>				
 						</tr>	
-						</tbody>	
-						<tbody>	
+							
 						<tr>
 							<td class="balance_number">3</td>
 							<td>ВК-23242 от 23.04.2020</td>
 							<td>ТОВ “Дабл Ю нет Юкрейн”</td>
-							<td class="balance_currency_pay td_price_up">+1000.00</td>
+							<td class="balance_currency_pay balance_plus">+1000.00</td>
 							<td class="balance_currency_pay">-</td>
-							<td class="balance_accrual td_price_down">-500.00</td>
-							<td class="balance_summary td_price_up">500.00</td>					
+							<td class="balance_accrual balance_minus">-500.00</td>
+							<td class="balance_summary balance_plus">500.00</td>					
 						</tr>	
-						</tbody>		
-						<tbody>	
+							
 						<tr>
 							<td class="balance_number">4</td>
 							<td class="balance_column_contr">ВК-1212323232 от 25.01.1999</td>
 							<td class="balance_column_contr">ТОВ “Дабл Ю нет Юкрейн”</td>
-							<td class="balance_currency_pay td_price_up">0.00</td>
+							<td class="balance_currency_pay balance_plus">0.00</td>
 							<td class="balance_currency_pay">-</td>
-							<td class="balance_accrual td_price_down">-2000.00</td>
-							<td class="balance_summary td_price_down">-2000.00</td>				
+							<td class="balance_accrual balance_minus">-2000.00</td>
+							<td class="balance_summary balance_minus">-2000.00</td>				
 						</tr>	
 						</tbody>				
 				</table>				
@@ -116,47 +117,142 @@
 								<td class="balance_number">1</td>
 								<td>Апрель</td>
 								<td class="history_date">02/04/2020</td>
-								<td class="balance_accrual td_price_up">+ 3600.00</td>
+								<td class="balance_accrual balance_plus">+ 3600.00</td>
 								<td class="balance_accrual">-</td>
-								<td class="balance_accrual td_price_up">0</td>
+								<td class="balance_accrual balance_plus">0</td>
 								<td class="history_contract">7777</td>
 								<td class="history_description">Опл.рах.№ WU-0180750 вiд 01/02/2020 за пiдтримку мережевої IТ-iнфраструктури ПДВ 20% 8856.00 ((0101567561))</td>
 							</tr>	
-						</tbody>	
-						<tbody>		
+								
 							<tr>
 								<td class="balance_number">2</td>
 								<td>Апрель</td>
 								<td class="history_date">01/04/2020</td>
 								<td class="balance_accrual">−</td>
-								<td class="balance_accrual td_price_down">-3600</td>
-								<td class="balance_accrual td_price_down">-3600</td>
+								<td class="balance_accrual balance_minus">-3600</td>
+								<td class="balance_accrual balance_minus">-3600</td>
 								<td class="history_contract">7777</td>
 								<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span> 
-									<button class="show_positions_btn" onclick="">
+									<button class="show_positions_btn" data-number="2">
 										<span>Посмотреть позиции
 										</span>
-										<img src="i/Vector.svg" class="rotate-reset" alt="">
-									</button>
-									<div class="show_positions_filter">
-										asfasgagsag
-									</div>
+										<img src="i/Vector_light_blue.svg" class="rotate-reset">
+									</button>		
 								</td>
-							</tr>	
-						</tbody>	<tbody>		
-							<tr>
-								<td class="balance_number">2.1</td>
-								<td>Апрель 2020</td>
-								<td class="history_date">01/04/2020</td>
-								<td class="balance_accrual">-</td>
-								<td class="balance_accrual td_price_down">-932.00</td>
-								<td class="balance_accrual td_price_down">-164137.96</td>
-								<td class="history_contract">7777</td>
-								<td class="history_description">Абонентна плата за використання послуги "Підтрика мережевої IT-інфраструктури юніт 0908" за Квітень 2020
-								</td>
-							</tr>	
-						</tbody>	
-					</table>	
+							</tr>
+							<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.1</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.2</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.3</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.4</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.5</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>						
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.6</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.7</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.8</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.9</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr class="history_collapse" data-number="2">
+							<td class="balance_number">2.10</td>
+							<td>Апрель</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">−</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="balance_accrual balance_minus">-3600</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Услуги по договору 7777 на сумму -50`340.00 UAH <span>[56 позиций]</span></td>
+						</tr>
+						<tr>
+							<td class="balance_number">2.1</td>
+							<td>Апрель 2020</td>
+							<td class="history_date">01/04/2020</td>
+							<td class="balance_accrual">-</td>
+							<td class="balance_accrual balance_minus">-932.00</td>
+							<td class="balance_accrual balance_minus">-164137.96</td>
+							<td class="history_contract">7777</td>
+							<td class="history_description">Абонентна плата за використання послуги "Підтрика мережевої IT-інфраструктури юніт 0908" за Квітень 2020
+							</td>
+						</tr>	
+					</tbody>	
+				</table>	
 			</div>
 			</div>
 		</div>
