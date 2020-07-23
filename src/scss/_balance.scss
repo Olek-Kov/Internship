@@ -3,7 +3,7 @@
 		margin-top: rem(30px);
 		display: flex;
 		justify-content: space-between;
-			.balance_box__header_info {
+			@include e(info) {
 				display: inline-block;	
 				font: rem(24px) $fontFamily;
 				line-height: rem(28px);
@@ -11,40 +11,40 @@
 				text-transform: uppercase;
 				font-weight: 700;
 		}	
-			.balance_box__header_filter_btn {
-				display: block;
-				width: rem(150px);
-				font: rem(17px) $fontFamily;
-				line-height: rem(20px);
-				color: #000037;
-				padding: rem(9px) rem(25px);
-				border: rem(1px) solid #E0E0E0;
-				border-radius: rem(8px);
-				text-align: center;
-				cursor: pointer;
-					 &_vector_dark_blue {
-					 	display: inline-block;
-					 	 }
-					 &_vector_white {
-					 	display: none;
-						 }
-					 span {
-							display: inline-block;	
-							margin-right: rem(7px);		
-					 		}
-					 &.active {			
-						background: #6785B8;
-						color: $white;
-							.balance_box__header_filter_btn_vector_dark_blue {
-								display: none;
-							} 				
-							.balance_box__header_filter_btn_vector_white {
-								display: inline-block;
-								transform: rotate(-180deg);
-							}
+	.balance_box__header_filter_btn {
+		display: block;
+		width: rem(150px);
+		font: rem(17px) $fontFamily;
+		line-height: rem(20px);
+		color: #000037;
+		padding: rem(9px) rem(25px);
+		border: rem(1px) solid #E0E0E0;
+		border-radius: rem(8px);
+		text-align: center;
+		cursor: pointer;
+			 &_vector_dark_blue {
+			 	display: inline-block;
+			 	 }
+			 &_vector_white {
+			 	display: none;
+				 }
+			 p {
+					display: inline-block;	
+					margin-right: rem(7px);		
+			 		}
+			 &.active {			
+				background: #6785B8;
+				color: $white;
+					.balance_box__header_filter_btn_vector_dark_blue {
+						display: none;
+					} 				
+					.balance_box__header_filter_btn_vector_white {
+						display: inline-block;
+						transform: rotate(-180deg);
 					}
 			}
 	}
+}
 
 	@include e(header_filters) {
 			display: none;		
@@ -73,8 +73,10 @@
 					width: 100%;
 					text-align: center;
 				}
-				ul li {
-					float: left;
+				ul {
+					display: flex;
+				}
+				ul li {					
 					display: inline-block;
 					width: 50%;
 						a{
@@ -112,10 +114,10 @@
 									vertical-align: middle;
 								}									
 								.history_description {	
-									width: rem(220px);
+									width: rem(221px);
 									font-size: rem(12px);
 									padding:rem(10px) rem(0px);	
-									span {
+									a {
 										color: $dark;
 										font-weight: 500;
 									}	
@@ -124,7 +126,8 @@
 										padding-top: rem(7px);
 										display: inline-block;
 										cursor: pointer;
-										span {
+										p {
+											display: inline-block;
 											font: rem(14px) $fontFamily;
 											font-weight: 700;
 											line-height: rem(16px);

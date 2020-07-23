@@ -542,7 +542,7 @@ button::-moz-focus-inner {
           justify-content: space-between;
 }
 
-.balance_box__header .balance_box__header_info {
+.balance_box__header__info {
   display: inline-block;
   font: 1.5rem "Roboto", sans-serif;
   line-height: 1.75rem;
@@ -572,7 +572,7 @@ button::-moz-focus-inner {
   display: none;
 }
 
-.balance_box__header .balance_box__header_filter_btn span {
+.balance_box__header .balance_box__header_filter_btn p {
   display: inline-block;
   margin-right: 0.4375rem;
 }
@@ -628,8 +628,13 @@ button::-moz-focus-inner {
   text-align: center;
 }
 
+.balance_box__tab ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .balance_box__tab ul li {
-  float: left;
   display: inline-block;
   width: 50%;
 }
@@ -676,12 +681,12 @@ button::-moz-focus-inner {
 }
 
 .balance_box__container .balance_box__container_content .balance_box__history_data .history_description {
-  width: 13.75rem;
+  width: 13.8125rem;
   font-size: 0.75rem;
   padding: 0.625rem 0rem;
 }
 
-.balance_box__container .balance_box__container_content .balance_box__history_data .history_description span {
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description a {
   color: #3C3C3B;
   font-weight: 500;
 }
@@ -693,7 +698,8 @@ button::-moz-focus-inner {
   cursor: pointer;
 }
 
-.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn span {
+.balance_box__container .balance_box__container_content .balance_box__history_data .history_description .show_positions_btn p {
+  display: inline-block;
   font: 0.875rem "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1rem;
